@@ -4,9 +4,9 @@ class SmallestInfiniteSet {
     static SMALLEST_INITIAL_VALUE_IN_STREAM = 1;
 
     constructor() {
-        //const {MinPriorityQueue} = require('@datastructures-js/priority-queue');
-        //MinPriorityQueue<Number>()
-        this.minHeap_numbersInStream_removedAndAddedAgain = new MinPriorityQueue({compare: (x, y) => x - y});
+        //const {PriorityQueue} = require('@datastructures-js/priority-queue');
+        //PriorityQueue<Number>()
+        this.minHeap_numbersInStream_removedAndAddedAgain = new PriorityQueue((x, y) => x - y);
 
         //Set<Number>()
         this.set_numbersInStream_removedAndAddedAgain = new Set();
